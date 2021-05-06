@@ -1,0 +1,17 @@
+version: '3'
+services:
+    twitch_stream:
+        build: ./birdfeeder/.
+        restart: always
+        volumes:
+            - /opt/vc:/opt/vc
+        devices:
+            - /dev/vchiq:/dev/vchiq
+        environment:
+            - LD_LIBRARY_PATH=/opt/vc/lib
+networks:
+  default:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.177.56.0/24
