@@ -8,7 +8,7 @@ https://twitch.tv/bendingunit15
 <code>sudo apt-get update && sudo apt-get install docker.io python3 python3-pip git -y && pip3 install docker-compose</code>
 3. Git clone the repo to your PI.<br>
 <code>gh repo clone birdfeedercamera/pi</code><br>
-3. Change Directory to the folder downloaded and open the "birdfeeder" directory. Open and edit "start_stream.py" and enter you twitch stream ID at the end. 
-4. Run the following to command to start docker and run the birdfeedercamera container<br>
+3. Open and edit "start_stream.py" and add your RTMP url and stream key to the file. 
+4. Go back to the PI directory and run the following to command to start the docker container<br>
 <code>docker-compose up --build</code>
 
