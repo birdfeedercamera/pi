@@ -1,5 +1,4 @@
 https://twitch.tv/birdfeedercamera<br>
-https://twitch.tv/bendingunit15
 
 
 1. Enable Camera<br>
